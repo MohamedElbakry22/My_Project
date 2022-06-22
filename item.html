@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>item</title>
+    <!-- rendering css file -->
+    <link rel="stylesheet" href="Normalize.css" />
+    <!-- for awesome library -->
+    <link rel="stylesheet" href="all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="dibs.css" />
+    <style>
+        .item-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .itemTitle{
+            color: var(--main-color);
+            margin: 30px;
+        }
+        .item-description{
+            text-align: center;
+            padding: 10px;
+            background-color: #00000020;
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a href="dibs.html">
+              <img src="logo-dibs.png" alt="dibs" class="lo" />
+              <div class="logo-title">
+                <img src="dibs.png" alt="" class="di" />
+                <p>Restaurant & Cafe</p>
+              </div>
+            </a>
+          </div>
+          <nav>
+            <div class="nav-items">
+              <a href="dibs.html" class="nav-item nav-item-1">HOME</a>
+              <a href="menu.html" class="nav-item nav-item-2">MENU</a>
+              <a href="contat-us.html" class="nav-item nav-item-3">CONTACT US</a>
+              <a href="about-us.html" class="nav-item nav-item-4">ABOUT US</a>
+            </div>
+            <div class="icons">
+              <i
+                id="locate"
+                class="fa-solid fa-location-dot"
+                title="go to location"
+              ></i>
+              <i
+                class="fa-solid fa-gear gear"
+                title="site settings"
+                onclick="showSettings()"
+              ></i>
+              <div class="settings">
+                <div class="toggle-mode">
+                  <div class="dark-mode mode" onclick="changeMode('dark')">
+                    <i class="fa-solid fa-moon"></i>
+                    <p>Dark mode</p>
+                  </div>
+                  <div
+                    class="light-mode mode"
+                    style="display: none"
+                    onclick="changeMode('light')"
+                  >
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>light mode</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu">
+              <i class="fa-solid fa-bars menu" onclick="showMenu()"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!--end headerrrrrrrrr-->
+    <div class="container item-container">
+      <img src="hamburger.png" alt="" width="300px"/>
+      <h3 class="itemTitle">item title</h3>
+      <div class="item-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda
+        nobis, non obcaecati vero neque repudiandae saepe rerum officia
+        consectetur ullam dolore ut aliquid asperiores recusandae sed aperiam
+        reprehenderit sint? Adipisci, doloribus. Repudiandae unde repellat
+        facilis laboriosam ab exercitationem ullam possimus necessitatibus modi!
+        Unde voluptatum officia consequuntur est, sint, fuga delectus id maiores
+        magni recusandae illo nesciunt earum ex assumenda. Tenetur impedit
+        officia deserunt architecto sapiente magni asperiores accusamus. Ea
+        minus hic cupiditate nemo alias assumenda amet, deleniti eaque magni
+        harum iusto recusandae quo necessitatibus itaque ab delectus mollitia
+        perspiciatis! Minus cupiditate aperiam ullam maxime, eligendi error ipsa
+        voluptatem iusto nihil perferendis obcaecati asperiores ut aliquid
+        laborum consectetur corrupti beatae facere perspiciatis commodi sunt
+        aspernatur eveniet sequi explicabo. Unde, commodi! Culpa hic similique
+        at ut debitis, veritatis, non totam rerum nisi omnis dicta impedit
+        assumenda velit asperiores quo dolorum maiores alias id. Voluptates
+        neque amet hic eveniet laborum sequi necessitatibus. Quibusdam ex
+        quisquam voluptas incidunt sed esse suscipit, quam nulla aliquam
+        assumenda illum facere minus aperiam corrupti odit. Porro vitae
+        perspiciatis neque hic consequatur nam quas ad optio rerum! At?
+      </div>
+    </div>
+  </body>
+</html>

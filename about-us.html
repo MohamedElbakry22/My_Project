@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9fc82612bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us | dib's</title>
+    <!-- rendering css file -->
+    <link rel="stylesheet" href="Normalize.css" />
+    <!-- for awesome library -->
+    <link rel="stylesheet" href="all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="about-us.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;800;900&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="dibs.html">
+            <img src="logo-dibs.png" alt="dibs" class="lo" />
+            <div class="logo-title">
+              <img src="dibs.png" alt="" class="di" />
+              <p>Restaurant & Cafe</p>
+            </div>
+          </a>
+        </div>
+        <nav>
+          <div class="nav-items">
+            <a href="dibs.html" class="nav-item nav-item-1">HOME</a>
+            <a href="menu.html" class="nav-item nav-item-2">MENU</a>
+            <a href="contact-us.html" class="nav-item nav-item-3">CONTACT US</a>
+            <a href="about-us.html" class="nav-item nav-item-4">ABOUT US</a>
+          </div>
+          <div class="icons">
+            <i
+              id="locate"
+              class="fa-solid fa-location-dot"
+              title="go to location"
+            ></i>
+            <i
+              class="fa-solid fa-gear gear"
+              title="site settings"
+              onclick="showSettings()"
+            ></i>
+            <div class="settings">
+              <div class="toggle-mode">
+                <div class="dark-mode mode" onclick="changeMode('dark')">
+                  <i class="fa-solid fa-moon"></i>
+                  <p>Dark mode</p>
+                </div>
+                <div
+                  class="light-mode mode"
+                  style="display: none"
+                  onclick="changeMode('light')"
+                >
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <p>light mode</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <i class="fa-solid fa-bars menu" onclick="showMenu()"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start first content -->
+    <div class="container sec-cont">
+      <div class="about-us">ABOUT US</div>
+    </div>
+    <div class="container first-content">
+      <div class="img-1"></div>
+      <div class="img-2"></div>
+      <p class="desc">
+        WE ARE DIB'S. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quisquam minima iusto nostrum voluptatibus consectetur magnam veritatis,
+        ratione expedita adipisci, sit voluptatem autem quae ducimus! Eaque quia
+        dolor ut officia vel.
+      </p>
+    </div>
+    <!-- end first content -->
+    <!-- start second content -->
+    <div class="container mood-cont">
+      <h2>OUR MOOD</h2>
+      <div class="imgs">
+        <img src="img2.jpg" class="f" alt="" />
+        <img src="mood-1.jpg" alt="" />
+        <img src="library.jpg" alt="" />
+        <img src="mood-2.jpg" alt="" />
+        <img src="mood-3.jpg" alt="" />
+        <img src="mood-4.jpg" alt="" />
+        <img src="mood-5.jpg" alt="" />
+        <img src="mood-6.jpg" alt="" />
+      </div>
+    </div>
+    <!-- end second content -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="hotline">
+          <h4>Hotline: <span>11111</span></h4>
+        </div>
+        <div class="w-h">
+          <p class="ff">Working hours:</p>
+          <p>Saturday : <span>from 10:00 am to 03:00 am</span></p>
+          <p>Sunday : <span>from 10:00 am to 03:00 am</span></p>
+          <p>Monday : <span>from 10:00 am to 03:00 am</span></p>
+          <p>Tuesday : <span>from 10:00 am to 03:00 am</span></p>
+          <p>Wednesday : <span>from 10:00 am to 03:00 am</span></p>
+          <p>Thursday : <span>from 10:00 am to 03:00 am</span></p>
+          <p>Friday : <span>from 10:00 am to 03:00 am</span></p>
+        </div>
+        <div class="foot-btns">
+          <a href="tel:01234567890"><button>call us</button></a>
+          <a
+            href="https://www.google.com/maps/dir//dibs+restaurant/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1458577b05f4d4c7:0xd1b4a6cfb12eb4c4?sa=X&ved=2ahUKEwj3y8PFhJr4AhXJiv0HHd0hAg4Q9Rd6BAheEAM"
+            ,
+          ><button>location</button></a>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="about-us.js"></script>
+  </body>
+</html>

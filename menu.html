@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu | dib's</title>
+    <!-- rendering css file -->
+    <link rel="stylesheet" href="Normalize.css" />
+    <!-- for awesome library -->
+    <link rel="stylesheet" href="all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="menu.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;800;900&family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="dibs.html">
+            <img src="logo-dibs.png" alt="dibs" class="lo" />
+            <div class="logo-title">
+              <div style="font-family: 'caveat', cursive;">MENU</div>
+            </div>
+          </a>
+        </div>
+        <div class="menu-nav">
+          <div class="menu-nav-items">
+            <div
+              class="menu-nav-item menu-nav-item-1 active"
+              onclick="filterItems('full menu')"
+            >
+              full menu
+            </div>
+            <div
+              class="menu-nav-item menu-nav-item-2"
+              onclick="filterItems('breakfast')"
+            >
+              breakfast
+            </div>
+            <div
+              class="menu-nav-item menu-nav-item-3"
+              onclick="filterItems('beef')"
+            >
+              beef
+            </div>
+            <div
+              class="menu-nav-item menu-nav-item-4"
+              onclick="filterItems('chicken')"
+            >
+              chicken & fish
+            </div>
+            <div
+              class="menu-nav-item menu-nav-item-5"
+              onclick="filterItems('desserts')"
+            >
+              desserts
+            </div>
+            <div
+              class="menu-nav-item menu-nav-item-6"
+              onclick="filterItems('drinks')"
+            >
+              drinks
+            </div>
+          </div>
+        </div>
+        <!-- crousel start -->
+        <div class="call-us">
+          <div class="number">for orders & reservation</div>
+          <div class="call">
+            call us on:
+            <span><a href="tel:+201234567890">+201234567890</a></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <div class="container slide-container">
+      <div class="crousel">
+        <div class="slides">
+          <div class="slide slide-1">
+            <p onclick="filterItems('full menu')">full menu</p>
+          </div>
+          <div class="slide slide-2">
+            <p onclick="filterItems('breakfast')">breakfast</p>
+          </div>
+          <div class="slide slide-3">
+            <p onclick="filterItems('beef')">beef</p>
+          </div>
+          <div class="slide slide-4">
+            <p onclick="filterItems('chicken')">chicken & fish</p>
+          </div>
+          <div class="slide slide-5">
+            <p onclick="filterItems('desserts')">desserts</p>
+          </div>
+          <div class="slide slide-6">
+            <p onclick="filterItems('drinks')">drinks</p>
+          </div>
+        </div>
+        <div class="btns">
+          <i
+            class="fa-solid fa-arrow-left arrow ar-r"
+            onclick="changeSlide('left')"
+          ></i>
+          <i
+            class="fa-solid fa-arrow-right arrow ar-l"
+            onclick="changeSlide('right')"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- start menu content -->
+    <div class="container menu-container">
+      <div class="menu-items">
+        <div class="item-card breakfast">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card breakfast">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card breakfast">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card breakfast">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card breakfast">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card beef">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card beef">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card beef">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card beef">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card beef">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card beef">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card beef">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card beef">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card chicken">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card chicken">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card chicken">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card chicken">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card chicken">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card chicken">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card chicken">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card desserts">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card desserts">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card desserts">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card desserts">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card desserts">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+        <div class="item-card drinks">
+          <img src="hamburger.png" alt="" />
+          <div class="item-title">item-title</div>
+        </div>
+      </div>
+    </div>
+    <!-- end menu content -->
+    <div class="container menu-co">
+      <div class="overlay"></div>
+      <div class="mu-co">
+        <div class="mu">
+          <p>
+            for orders & reservations <span>call us on: </span>
+            <span><a href="tel:+201234567890">+201234567890</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="menu.js"></script>
+  </body>
+</html>

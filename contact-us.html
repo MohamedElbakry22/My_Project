@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9fc82612bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact us | Dib's</title>
+    <!-- rendering css file -->
+    <link rel="stylesheet" href="Normalize.css" />
+    <!-- for awesome library -->
+    <link rel="stylesheet" href="all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="dibs.css" />
+    <link rel="stylesheet" href="contact-us.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;800;900&family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="dibs.html">
+            <img src="logo-dibs.png" alt="dibs" class="lo" />
+            <div class="logo-title">
+              <img src="dibs.png" alt="" class="di" />
+              <p>Restaurant & Cafe</p>
+            </div>
+          </a>
+        </div>
+        <nav>
+          <div class="nav-items">
+            <a href="dibs.html" class="nav-item nav-item-1">HOME</a>
+            <a href="menu.html" class="nav-item nav-item-2">MENU</a>
+            <a href="contact-us.html" class="nav-item nav-item-3">CONTACT US</a>
+            <a href="about-us.html" class="nav-item nav-item-4">ABOUT US</a>
+          </div>
+          <div class="icons">
+            <i
+              id="locate"
+              class="fa-solid fa-location-dot"
+              title="go to location"
+            ></i>
+            <i
+              class="fa-solid fa-gear gear"
+              title="site settings"
+              onclick="showSettings()"
+            ></i>
+            <div class="settings">
+              <div class="toggle-mode">
+                <div class="dark-mode mode" onclick="changeMode('dark')">
+                  <i class="fa-solid fa-moon"></i>
+                  <p>Dark mode</p>
+                </div>
+                <div
+                  class="light-mode mode"
+                  style="display: none"
+                  onclick="changeMode('light')"
+                >
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <p>light mode</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <i class="fa-solid fa-bars menu" onclick="showMenu()"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--end headerrrrrrrrr-->
+    <div class="container sec-cont">
+      <div class="contact">GET IN TOUCH</div>
+    </div>
+    <div class="container form-cont">
+      <form
+        action="https://formsubmit.co/mohamed132654@gmail.com"
+        method="post"
+      >
+        <label for="category" class="label"
+          >category: <span class="star">*</span></label
+        >
+        <br />
+        <select name="category" required>
+          <option value="choose" disabled selected>choose</option>
+          <option value="suggestions">suggestions</option>
+          <option value="complaint">complaint</option>
+          <option value="job opportunties">job opportunties</option>
+          <option value="other">other</option>
+        </select>
+        <div>First Name: <span class="star">*</span></div>
+        <input
+          type="text"
+          name="First Name"
+          placeholder="your first name..."
+          required
+        />
+        <div>Last Name: <span class="star">*</span></div>
+        <input
+          type="text"
+          name="Last Name"
+          placeholder="your last name..."
+          required
+        />
+        <div>Phone Number: <span class="star">*</span></div>
+        <input
+          type="text"
+          name="Phone Number"
+          id="phone"
+          placeholder="your phone number..."
+          maxlength="12"
+          required
+        />
+        <p class="notValid">phone number is not valid</p>
+        <div>Email: <span class="star">*</span></div>
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <p class="notValid">email id is not valid</p>
+        <div>message: <span class="star">*</span></div>
+        <textarea
+          name="Message"
+          rows="10"
+          placeholder="Enter your comment or question here..."
+          required
+        ></textarea>
+        <button type="submit" id="btn">submit message</button>
+      </form>
+    </div>
+    <script>
+      let form =document.querySelector("form")
+      let btn=document.getElementById("btn")
+      btn.onclick=()=>{
+        console.log("submitting form...");
+        let phone=document.getElementById("phone").value;
+        let email=document.getElementById("email").value 
+        let notValid=document.getElementsByClassName("notValid")
+        let phoneRegex=/01(0|1|2|5)\d{8}/ig;
+        let emailRegex=/\w+@\w+.com/ig;
+        console.log(phone);
+        let phoneValidation=phoneRegex.test(phone)
+        let emailValidation=emailRegex.test(email)
+        if(phoneValidation===false && emailValidation===false){
+          notValid[0].style.display="block";
+          notValid[1].style.display="block";
+          return false
+        }
+        if(phoneValidation===false){
+          notValid[0].style.display="block";
+        } else{
+          notValid[0].style.display="none";
+        }
+        if(emailValidation===false){
+          notValid[1].style.display="block";
+        } else{
+          notValid[1].style.display="none";
+        }
+        if(phoneValidation===false || emailValidation===false){
+          return false
+        }
+        return true
+      }
+    </script>
+    <script src="about-us.js"></script>
+  </body>
+</html>

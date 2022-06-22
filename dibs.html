@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9fc82612bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dib's</title>
+    <!-- rendering css file -->
+    <link rel="stylesheet" href="Normalize.css" />
+    <!-- for awesome library -->
+    <link rel="stylesheet" href="all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="dibs.css" />
+    <!--google fonts for laso and owsald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,900;1,100&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <!--######################-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;800;900&family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="dibs.html">
+            <img src="logo-dibs.png" alt="dibs" class="lo" />
+            <div class="logo-title">
+              <img src="dibs.png" alt="" class="di" />
+              <p>Restaurant & Cafe</p>
+            </div>
+          </a>
+        </div>
+        <nav>
+          <div class="nav-items">
+            <a href="dibs.html" class="nav-item nav-item-1">HOME</a>
+            <a href="menu.html" class="nav-item nav-item-2">MENU</a>
+            <a href="contact-us.html" class="nav-item nav-item-3">CONTACT US</a>
+            <a href="about-us.html" class="nav-item nav-item-4">ABOUT US</a>
+          </div>
+          <div class="icons">
+            <i
+              id="locate"
+              class="fa-solid fa-location-dot"
+              title="go to location"
+            ></i>
+            <i
+              class="fa-solid fa-gear gear"
+              title="site settings"
+              onclick="showSettings()"
+            ></i>
+            <div class="settings">
+              <div class="toggle-mode">
+                <div class="dark-mode mode" onclick="changeMode('dark')">
+                  <i class="fa-solid fa-moon"></i>
+                  <p>Dark mode</p>
+                </div>
+                <div
+                  class="light-mode mode"
+                  style="display: none"
+                  onclick="changeMode('light')"
+                >
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <p>light mode</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <i class="fa-solid fa-bars menu" onclick="showMenu()"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start content -->
+    <div class="container">
+      <div class="crousel">
+        <div class="slides">
+          <div class="slide slide-1"></div>
+          <div class="slide slide-2"></div>
+          <div class="slide slide-3"></div>
+          <div class="slide slide-4"></div>
+          <div class="slide slide-5"></div>
+        </div>
+        <div class="btns">
+          <i
+            class="fa-solid fa-arrow-left arrow ar-r"
+            onclick="changeSlide('left')"
+          ></i>
+          <i
+            class="fa-solid fa-arrow-right arrow ar-l"
+            onclick="changeSlide('right')"
+          ></i>
+        </div>
+        <div class="dots">
+          <div class="dot highlight"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
+    <div class="container menu-co">
+      <div class="overlay"></div>
+      <div class="mu-co">
+        <div class="mu">
+          <p>try our delicious <span>food and drinks</span></p>
+          <button id="go-to-menu">go to menu</button>
+        </div>
+      </div>
+    </div>
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <a href="">
+          <img src="logo-dibs.png" alt="" />
+        </a>
+        <h4>follow us on:</h4>
+        <div class="icons">
+          <a href="https://www.facebook.com/dibs.egy/"
+            ><i class="fa-brands fa-facebook" title="facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/dibs.eg?igshid=YmMyMTA2M2Y="
+            ><i class="fa-brands fa-instagram" title="instagram"></i
+          ></a>
+          <i class="fa-brands fa-twitter" title="twitter"></i>
+          <i class="fa-brands fa-google-plus-g" title="gmail"></i>
+        </div>
+        <div class="foot">
+          &copy; 2022 - <a href="">Dib's</a> all rights reserved
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="dibs.js"></script>
+  </body>
+</html>

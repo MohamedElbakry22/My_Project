@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*:not(header .container .logo a p, i) {
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 0.5px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+:root {
+  --main-color: #b08828;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* end global rules */
+.sec-cont {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.contact {
+  position: relative;
+  font-size: 35px;
+  color: var(--main-color);
+  text-align: center;
+  letter-spacing: 1px;
+}
+.contact::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  background-color: white;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.contact::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form-cont {
+  padding: 5px 15%;
+  display: flex;
+  flex-direction: column;
+}
+.form-cont form label {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: var(--main-color);
+}
+.form-cont form select,
+.form-cont form select option {
+  font-size: 14px;
+  padding: 5px;
+}
+.form-cont form select {
+  width: 200px;
+  margin-bottom: 30px;
+}
+.star {
+  color: red !important;
+}
+.form-cont form input {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 60%;
+  font-size: 14px;
+  padding: 5px;
+  display: block;
+}
+.form-cont form div {
+  color: var(--main-color);
+  display: block;
+}
+.form-cont form textarea {
+  width: 80%;
+  margin-top: 15px;
+}
+form button {
+  padding: 10px;
+  width: 150px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background-color: #c49925;
+  color: white;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+button:hover {
+  cursor: pointer;
+}
+@media (max-width: 662px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-cont form input {
+    width: 300px;
+  }
+  button {
+    margin-left: 0 !important;
+  }
+}
+.notValid {
+  color: red;
+  position: relative;
+  top: -25px;
+  display: none;
+}
